@@ -31,7 +31,7 @@ public class Producsstream {
                 file.createNewFile();
             }
           
-            oos = new ObjectOutputStream(new FileOutputStream(file)); // Importante
+            oos = new ObjectOutputStream(new FileOutputStream(file)); 
             
             oos.writeObject(po1);
             oos.writeObject(po2);
@@ -75,9 +75,7 @@ public class Producsstream {
     }
         public static void main(String[] args) {
         try {
-            // Creaci�n de dos objetos con atributos, y uno con nulos.
-            
-            
+
             Producsstream aux = new Producsstream();
             aux.serializar();
             aux.leerSerializacion();
